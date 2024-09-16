@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "394878414011",
+    "project_id": "whisper-box-5b3f4",
+    "storage_bucket": "whisper-box-5b3f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394878414011:android:6539e6be44c5ac1d22cd9e",
+        "android_client_info": {
+          "package_name": "com.example.whisperbox"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-rLvzkaH7bjFnX7ZZXcZ6z-ki0mO4OxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

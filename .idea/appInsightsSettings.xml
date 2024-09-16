@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.whisperbox" />
+                  <option name="mobileSdkAppId" value="1:394878414011:android:6539e6be44c5ac1d22cd9e" />
+                  <option name="projectId" value="whisper-box-5b3f4" />
+                  <option name="projectNumber" value="394878414011" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
