@@ -7,222 +7,236 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
 
-    <ProgressBar
-        android:id="@+id/pb1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:indeterminateTint="@color/shade1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authSignInTxt"
-        app:layout_constraintVertical_bias="0.012" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text="Sign Up"
-        android:textColor="@color/shade1"
-        android:textSize="38sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.card.MaterialCardView
-
-        android:id="@+id/card4"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:outlineAmbientShadowColor="@color/shade1"
-        app:cardBackgroundColor="@color/shade2"
-        app:cardCornerRadius="8dp"
+        android:layout_height="match_parent">
 
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintBottom_toTopOf="@+id/card1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.textfield.TextInputLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/shade2"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false">
+            android:layout_height="match_parent">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nameTxt"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/shade2"
-                android:hint="Enter Your Name"
-                android:inputType="textPersonName"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="Sign Up"
                 android:textColor="@color/shade1"
-                android:textColorHint="@color/shade1"
-                android:textCursorDrawable="@null" />
+                android:textSize="38sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.card.MaterialCardView
 
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/shade2"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-
-        android:outlineAmbientShadowColor="@color/shade1"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/shade2"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailTxt"
-                android:textCursorDrawable="@null"
-                android:textColorHint="@color/shade1"
-                android:textColor="@color/shade1"
+                android:id="@+id/card4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/shade2"
-                android:hint="Enter Email Id"
-                android:inputType="textEmailAddress" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:outlineAmbientShadowColor="@color/shade1"
+                app:cardBackgroundColor="@color/shade2"
+                app:cardCornerRadius="8dp"
 
-        </com.google.android.material.textfield.TextInputLayout>
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toTopOf="@+id/card1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
-    </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shade2"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/shade2"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card1">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/shade2"
+                        android:hint="Enter Your Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/shade1"
+                        android:textColorHint="@color/shade1"
+                        android:textCursorDrawable="@null" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/shade2"
-            app:boxStrokeWidth="0dp"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/shade1"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false">
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/pswdTxt"
-                android:textCursorDrawable="@null"
-                android:textColorHint="@color/shade1"
-                android:textColor="@color/shade1"
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/shade2"
-                android:hint="Enter Password"
-                android:inputType="textPassword" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/shade2"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
 
-        </com.google.android.material.textfield.TextInputLayout>
+                android:outlineAmbientShadowColor="@color/shade1"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shade2"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/shade2"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card2">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailTxt"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/shade1"
+                        android:textColor="@color/shade1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/shade2"
+                        android:hint="Enter Email Id"
+                        android:inputType="textEmailAddress" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/shade2"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/shade1">
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/rePswdTxt"
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/shade2"
-                android:hint="Re-Enter Password"
-                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/shade2"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shade2"
+                    app:boxStrokeWidth="0dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/shade1"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pswdTxt"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/shade1"
+                        android:textColor="@color/shade1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/shade2"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/shade2"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shade2"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/shade1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rePswdTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/shade2"
+                        android:hint="Re-Enter Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/shade1"
+                        android:textColorHint="@color/shade1"
+                        android:textCursorDrawable="@null" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Already Registered !!"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/card3"
+                app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+            <TextView
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/authSignInTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Log In"
                 android:textColor="@color/shade1"
-                android:textColorHint="@color/shade1"
-                android:textCursorDrawable="@null" />
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/baseline_arrow_forward_24"
+                android:backgroundTint="@color/shade1"
+                app:layout_constraintBottom_toBottomOf="@+id/authSignInTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/authSignInTxt"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
 
-    </com.google.android.material.card.MaterialCardView>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/pb1"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/authSignInTxt"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/progress_animation" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Already Registered !!"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/card3"
-        app:layout_constraintTop_toBottomOf="@+id/card3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:focusable="true"
-        android:clickable="true"
-        android:id="@+id/authSignInTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Sign In"
-        android:textColor="@color/shade1"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnIn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/baseline_arrow_forward_24"
-        android:backgroundTint="@color/shade1"
-        app:layout_constraintBottom_toBottomOf="@+id/authSignInTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/authSignInTxt"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

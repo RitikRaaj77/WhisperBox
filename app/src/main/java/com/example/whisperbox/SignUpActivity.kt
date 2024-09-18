@@ -2,6 +2,7 @@ package com.example.whisperbox
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -29,6 +30,7 @@ class SignUpActivity : AppCompatActivity() {
             val password = binding.pswdTxt.text.toString()
             val rePassword = binding.rePswdTxt.text.toString()
 
+
             signUp(email, password, rePassword, name)
         }
         binding.authSignInTxt.setOnClickListener {
@@ -41,6 +43,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun signUp(email: String, password: String, rePassword: String, name: String) {
+        binding.pb1.visibility = View.VISIBLE
         if (password == rePassword) {
             auth.createUserWithEmailAndPassword(email, rePassword)
                 .addOnCompleteListener(this) { task ->
@@ -56,6 +59,7 @@ class SignUpActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT,
                         ).show()
                     }
+                    binding.pb1.visibility = View.GONE
                 }
         } else {
             Toast.makeText(this, "Re-entered password is not same", Toast.LENGTH_SHORT).show()

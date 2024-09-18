@@ -2,6 +2,7 @@ package com.example.whisperbox
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -36,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun logIn(email: String, password: String) {
+        binding.pb1.visibility = View.VISIBLE
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -54,6 +56,7 @@ class LoginActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT,
                     ).show()
                 }
+                binding.pb1.visibility = View.GONE
             }
     }
 }

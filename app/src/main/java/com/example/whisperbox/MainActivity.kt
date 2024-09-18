@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        binding.pb2.visibility = View.VISIBLE
         auth = FirebaseAuth.getInstance()
         databaseReference = FirebaseDatabase.getInstance().getReference()
 
@@ -53,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                     userList.add(currentUser!!)
                 }
                 adapter.notifyDataSetChanged()
+                binding.pb2.visibility = View.GONE
             }
 
             override fun onCancelled(error: DatabaseError) {
