@@ -1,6 +1,8 @@
 package com.example.whisperbox
 
+import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -72,17 +74,26 @@ class MainActivity : AppCompatActivity() {
         userRecyclerView.adapter = adapter
 
         binding.logOutBtn.setOnClickListener{
-            AlertDialog.Builder(this)
+            val builder = AlertDialog.Builder(this)
                 .setTitle("Log Out")
                 .setMessage("Are you sure you want to log out?")
                 .setPositiveButton("Yes") { _, _ ->
                     auth.signOut()
-                    val i = Intent(this,LoginActivity::class.java)
+                    val i = Intent(this, LoginActivity::class.java)
                     finish()
                     startActivity(i)
                 }
                 .setNegativeButton("Cancel", null)
-                .show()
+
+            val dialog = builder.create()
+            dialog.show()
+
+            val positiveButton = dialog.getButton(DialogInterface.BUTTON_POSITIVE)
+            val negativeButton = dialog.getButton(DialogInterface.BUTTON_NEGATIVE)
+
+            positiveButton.setTextColor(getResources().getColor(R.color.shade1))
+            negativeButton.setTextColor(getResources().getColor(R.color.shade1))
         }
+
     }
 }
