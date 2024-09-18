@@ -58,7 +58,7 @@
             android:layout_height="match_parent"
             android:layout_weight="85"
             android:hint="Type your message"
-            android:padding="13dp"/>
+            android:padding="12dp"/>
 
         <ImageView
             android:id="@+id/chatButton"
