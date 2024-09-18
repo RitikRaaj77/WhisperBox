@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Background Color -->
-    <solid android:color="#d8efff" /> <!-- Light gray background color -->
+    <solid android:color="@null" /> <!-- Light gray background color -->
 
     <!-- Corner Radius -->
     <corners android:radius="16dp" /> <!-- Rounded corners -->
@@ -10,11 +10,4 @@
     <stroke
         android:width="3dp"
         android:color="@color/shade1" /> <!-- Border color and width -->
-
-    <!-- Padding (optional) -->
-    <padding
-        android:left="10dp"
-        android:top="10dp"
-        android:right="10dp"
-        android:bottom="10dp" />
 </shape>
