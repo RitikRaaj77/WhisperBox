@@ -131,17 +131,18 @@
             color: var(--foreground-secondary);
         }
 
-        .centered-image {
+        .left-image {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
             margin-right: 15px;
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
-            /* Ensures the image fills the circle */
+            /* Ensures the content fills the circle */
             border-radius: 50%;
-            /* Makes the image circular */
+            /* Makes the content circular */
             vertical-align: top;
+            /* Align the images with the top of the text */
         }
 
         .fade-in-part {
@@ -180,7 +181,7 @@
                 </video>
             </div>
             <div class="image-container">
-                <img src="asstes/Screenshot_20240923_002416.png.png" alt="Login Screen">
+                <img src="assets/login.png" alt="Login Screen">
             </div>
             <div class="image-container">
                 <img src="user_list.png" alt="User List">
@@ -203,7 +204,11 @@
         <div class="col-3">
             <div class="text-content">
                 <h1 class="custom-header fade-in-part">Whisper Box</h1>
-                <img src="assets/logoWhisper.png" alt="Description" class="centered-image fade-in-part">
+                <img src="assets/logoWhisper.png" alt="Description"
+                     class="left-image fade-in-part">
+                <a href="https://github.com/RitikRaaj77/WhisperBox">
+                    <img src="assets/gitsvg.svg" alt="SVG Icon" class="left-image fade-in-part">
+                </a>
                 <h2 class="fade-in-part">A Real-time Chat Application</h2>
                 <h3 class="fade-in-part white-text">A feature-rich, real-time 1-1 chat application designed for
                     seamless
