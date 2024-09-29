@@ -21,7 +21,7 @@ Whisper Box is a feature-rich, real-time 1-1 chat application designed for seaml
       <!-- Video as the first image -->
       <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: #000; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
           <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-              <source src="assets/video.mp4" type="video/mp4">
+              <source src="assets/videocom.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
       </div>
