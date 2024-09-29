@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.whisperbox.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginActivity : AppCompatActivity() {
+class  LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityLoginBinding
 
